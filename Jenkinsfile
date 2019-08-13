@@ -12,7 +12,7 @@ pipeline {
                 retry(3){
                     sh 'echo "RETRYING"'
                 }
-                timeout(time: 2,unit: MINUTES){
+                timeout(time: 2,unit: 'MINUTES'){
                     sh 'echo "DONE"'
                 }
             }
